@@ -6,7 +6,7 @@ import bcrypt
 from utils import apply_theme
 
 
-conn = sqlite3.connect(r"c:\Users\kania\OneDrive\Desktop\Bunny&CavyBotanicals\database\assessment db")
+conn = sqlite3.connect("../database/assessment.db")
 cursor = conn.cursor()
 
 class RegistrationApp:

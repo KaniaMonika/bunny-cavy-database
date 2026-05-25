@@ -28,7 +28,7 @@ def upload_photo():
         subprocess.run(["python", sys.argv[0], str(customer_id)])
 
 # DB connection
-conn = sqlite3.connect(r"c:\Users\kania\OneDrive\Desktop\Bunny&CavyBotanicals\database\assessment db")
+conn = sqlite3.connect("../database/assessment.db")
 cursor = conn.cursor()
 
 cursor.execute("SELECT first_name, email, pet_pic FROM Customers WHERE customer_id = ?", (customer_id,))

@@ -5,7 +5,7 @@ from tkinter import messagebox
 import subprocess
 
 #connecting to the database
-conn = sqlite3.connect(r"c:\Users\kania\OneDrive\Desktop\Bunny&CavyBotanicals\database\assessment db")
+conn = sqlite3.connect("../database/assessment.db")
 cursor = conn.cursor()
 
 #create the main GUI window

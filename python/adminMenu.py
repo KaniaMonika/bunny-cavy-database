@@ -17,7 +17,7 @@ def ExportTable():
 def Populate():
     subprocess.run(["python", "populateXMLForProduct.py",str(admin_id)])
 # DB connection
-conn = sqlite3.connect(r"c:\Users\kania\OneDrive\Desktop\Bunny&CavyBotanicals\database\assessment db")
+conn = sqlite3.connect("../database/assessment.db")
 cursor = conn.cursor()
 
 cursor.execute("SELECT login FROM admin_credentials WHERE admin_id = ?", (admin_id,))

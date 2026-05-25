@@ -4,7 +4,7 @@ import sqlite3
 import datetime
 import sys
 
-conn = sqlite3.connect(r"c:\Users\kania\OneDrive\Desktop\Bunny&CavyBotanicals\database\assessment db")
+conn = sqlite3.connect("../database/assessment.db")
 cursor = conn.cursor()
 
 class OrderWindow:

@@ -7,7 +7,7 @@ import sys
 admin_id = int(sys.argv[1])
 
 # DB connection
-conn = sqlite3.connect(r"c:\Users\kania\OneDrive\Desktop\Bunny&CavyBotanicals\database\assessment db")
+conn = sqlite3.connect("../database/assessment.db")
 cursor = conn.cursor()
 
 root = tk.Tk()
